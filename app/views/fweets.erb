@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Week X</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"
+	</head>
+	<body> 
+		<div class="container">
+			<%@fweets.each do |fweet|%>
+				<h1><%=fweet.user%> - <%=fweet.message%></h1>
+			<%end%>
+			<form action="/fweets" method = "POST">
+				User: <input type="text" name="user">
+				Message: <input type="text" name="message">
+				<input type="submit">
+			</form>
+		</div>
+	</body>
+</html>

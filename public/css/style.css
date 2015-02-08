@@ -1,0 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=VT323);
+input[type='text'] { font-size: 18px; font-family: 'VT323' ; }
+h1 {
+	font-family: 'VT323' ;
+}
+body {
+    background-color: #52527A;
+}
